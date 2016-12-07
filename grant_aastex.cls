@@ -3,6 +3,8 @@
 %% AASTeX61.cls                                  %%
 %% October 5, 2016                               %%
 %% Copyright 2016 American Astronomical Society  %%
+%% 												 %%
+%% With modifications by Dr. Grant R. Tremblay   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\currversion{6.1}
