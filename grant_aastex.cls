@@ -1,5 +1,7 @@
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Grant Tremblay's minor modification of        %%
+%%                                               %%
 %% AASTeX61.cls                                  %%
 %% October 5, 2016                               %%
 %% Copyright 2016 American Astronomical Society  %%
