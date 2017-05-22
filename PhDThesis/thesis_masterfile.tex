@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Grant Tremblay's PhD Thesis
+%                          Master File
+% 			FINAL VERSION
+%           grant@astro.rit.edu | Maine, June 2011
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+% Include the main formatting commands. 
+
+\include{thesis_formatting}
+
+% Put the whole thing together. 
+
+\begin{document}
+\frontmatter
+
+% Symbolic footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% Include the Front Matter (Titlepage, TOC, Acknowledgments, etc.)
+
+\include{frontmatter/frontmatter_final}
+
+\mainmatter
+
+% Reset the footnote counter for the Main Matter
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+
+% Chapters included below: 
+
+\include{introduction/introduction_final}
+
+\include{persistent/persistent_final}
+
+\include{starform/starform_final}
+
+\include{episodic/episodic_final}
+
+\include{highz/highz_final}
+
+\include{future/future_final}
+
+\backmatter
+
+% Make fake ``chapter'' for the References
+\renewcommand{\bibsection}{\chapter{References}}
+
+\bibliographystyle{thesis}
+% Use my master bibtex file
+\bibliography{/home/gtrembla/persistent/bibtex/masterrefs.bib}
+
+
+% Make a pretty final page
+\newpage
+
+\thispagestyle{empty}
+\vspace*{1.6in}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{cover_figs/backfig.eps}
+
+\vspace*{1.8in}
+{\sc \normalsize Grant Russell Tremblay}\\
+{\footnotesize ROCHESTER INSTITUTE OF TECHNOLOGY} \\
+{\small \copyright ~July, 2011}
+\end{center}
+\vfill
+
+
+\end{document}
+
+

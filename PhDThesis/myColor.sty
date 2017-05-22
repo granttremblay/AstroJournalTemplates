@@ -1,0 +1,17 @@
+\RequirePackage{color,calc}
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{myColor}
+              [2000/10/26 v1.0 LaTeX package for colored paragraphs.]
+\usepackage{color,calc}
+\newcommand{\cmcolor}{}
+\newenvironment{cminipage}[1][white]%
+  {%\setlength{\fboxsep}{-\fboxrule}
+   \renewcommand{\cmcolor}{#1}\noindent%
+   \begin{lrbox}{\@tempboxa}%
+     \begin{minipage}{\linewidth-2\fboxsep}}%
+  {  \end{minipage}%
+   \end{lrbox}%
+   \colorbox{\cmcolor}{\usebox{\@tempboxa}}}%   
+%% 
+%%
+%% End of file `myColor.sty'.

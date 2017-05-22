@@ -1,0 +1,7 @@
+latex thesis_masterfile.tex
+bibtex thesis_masterfile
+latex thesis_masterfile.tex
+latex thesis_masterfile.tex
+
+dvips -Papjfonts -t letter -Ppdf -G0 -o thesis_final.ps thesis_masterfile.dvi
+ps2pdf13 -dEmbedAllFonts=true thesis_final.ps
